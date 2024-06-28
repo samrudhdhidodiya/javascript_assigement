@@ -1,0 +1,782 @@
+(1).What is JavaScript. How to use it? 
+javascript is a scripting lenguage its use to manipulate html.
+
+(2). How many type of Variable in JavaScript?
+there are 4 type variable in javascript.
+1.automatically
+2.var
+3.let
+4.const
+
+(3). Define a Data Types in js?
+there are two types of data.
+1.primitive data  (2). non-primitive 
+string,boolean,number,null,undefined,array,object.
+string:-string is a sequence of characters used to represent text.
+string are one of the primitive datatype in javascript and can be created using single quotes,double quotes.
+ex:- var name = "samrudhdhi"
+    console.log(name);
+
+boolean:-Boolean is a primitive data type that can hold one of two values: true or false. Booleans are often used in conditional testing and logical operations.
+ex:- var check=true
+     console.log(check);
+
+Number:-Number is a data type used to represent numeric values. JavaScript only has one type of number, which can be used to represent both integer and floating-point numbers.
+number is primitive datatype.
+ex:- var num=10
+    console.log(num);
+
+Null:-Null is special value that represent an empty or unknown value.null is primitive datatype.
+ex:-var 
+array:-Array is collection of multiple values.array is a data structure store multiple value in a single variable.
+array is including number,string,object.
+ex:- var arr[1,2,3,"samrudhdhi",true,null]
+    console.log(arr[3]);
+
+object:-object will store multiplevalue in key value pair.
+var obj={name:"mital",marks=30,rollno:1}
+console.log(obj.name);
+
+(4).Write a mul Function Which will Work Properly When invoked With Following Syntax?
+function mul(a,b)
+{
+    return a*b
+}
+var c=mul(2,3)
+console.log(c);  output:=6
+
+(5).What the deference between undefined and undeclare in JavaScript?
+undefined:= undefined is a built-in value in JavaScript that represents an uninitialized or non-existent variable. When you try to access a variable that has not been initialized, it will return undefined.
+example:=
+var X;
+console.log(x); output:=undefined
+
+undeclare:=undeclared variable is a variable that does not exist in the current scope.
+example:=console.log(x); output:=undeclare
+
+(6).Using console.log() print out the following statement: The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another. Using console.log() print out the following quote by Mother Teresa:
+console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.");
+
+(7).Check if typeof '10' is exactly equal to 10. If not make it exactly equal?
+var a=10
+var b=10
+console.log(a==b);  /output:=true
+
+(8).Write a JavaScript Program to find the area of a triangle?
+function triangle(h,b)
+    {
+        return h*b/2
+
+    }
+    console.log(triangle(2,3));  output:=3
+
+(9).Write a JavaScript program to calculate days left until next Christmas?
+
+(10).What is Condition Statement
+A condition statement also known as a conditional statement or conditional expression, is a statement in programming that allows the program to make a decision based on certain conditions. It is used to control the flow of a program's execution by determining whether a specific block of code should be executed or not.
+condition is the statement that evaluates to either true or false.
+code to be executed if condition is true is the block of code that will be executed if the condition is true.
+
+type of condition statement:= if else , if else if , switch case
+example:= 
+var a=3
+if(a==3)
+{
+    console.log('This is 3');
+}
+else
+{
+    console.log('This is Not a 3');
+}                                           output:=This is 3
+
+
+
+(11).Find circumference of Rectangle formula : C = 4 * a ?
+function rectangle(a) {
+    return 4 * a;
+}
+console.log(rectangle(2));  output:=8
+
+(12).WAP to convert years into days and days into years?
+
+(13)Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
+
+(14).Write a JavaScript exercise to get the extension of a filename.?
+var filename ="javascript.html";
+console.log(filename.split('.').pop());  output:=html
+
+(15).What is the result of the expression (5 > 3 && 2 < 4)?
+console.log(5 > 3 && 2 < 4);  output:=true
+
+(16).What is the result of the expression (true && 1 && "hello")?
+true
+
+(17).What is the result of the expression true && false || false && true?
+console.log(true && false || false && true);  output:=false
+                false     ||  false   = false
+
+(18).What is a Loop and Switch Case in JavaScript define that ?
+loop are control structure that allow you to execute a block of code repeatedly as long as a specified condition is true.javascript supporate several type of loop.
+type of loops:for loop , while loop , do while loop
+example:=
+for(i=1;i<=10;i++)
+{
+    console.log(i);
+}
+
+switchcase:=
+var fruits="apple"
+    switch(fruits)
+    {
+        case 'apple':
+            console.log("apple");
+            break;
+        case 'banana':
+            console.log("banana");
+            break;
+        case 'mango':
+            console.log("mango");
+            break;
+        case 'kiwi':
+            console.log("kiwi");
+            break;    
+        default:
+            console.log("no fruits");
+    }
+
+(19).What is the use of is Nan function?
+The isNaN function in JavaScript is used to determine whether a value is NaN (Not-a-Number) or not. It returns true if the value passed to it is NaN, and false otherwise. The isNaN function is often used to validate user input, especially when the input is expected to be a number, to avoid errors and unexpected behavior in the code.
+For example:
+console.log(isNaN(123));  // false
+console.log(isNaN("Hello"));  // true
+
+(20).What is the difference between && and || in JavaScript?
+&& := The && operator is known as the logical AND operator. It returns true if both the conditions on either side of the operator are true. If either of the conditions is false, it returns false.
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+|| := The || operator is known as the logical OR operator. It returns true if at least one of the conditions on either side of the o.
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+
+(21).What is the use of Void (0)?
+The void(0) expression is a common technique used in JavaScript to prevent the default behavior of a page element, such as a link. When a link is clicked, it typically causes the browser to navigate to a different page. By using void(0) as the value of the href attribute, the default behavior of the link is cancelled, and the navigation is prevented.
+Here's an example:
+<a href="javascript:void(0);" onclick="alert('Hello World');">Click Me</a>
+In this example, the void(0) expression is used in the href attribute of the link to prevent the default behavior of the link. When the link is clicked, the onclick event is triggered and an alert box with the message "Hello World" is displayed.
+The void(0) expression is equivalent to undefined and is used because it's a concise way to return undefined as the result of an expression. By returning undefined, the expression has no effect on the web page and prevents the default behavior of the page element.
+
+(22).Check Number Is Positive or Negative in JavaScript?
+    var a
+    a=prompt("Enter Number:");
+    if(a>0)
+    {
+        document.write("This Number is Positive:"+a);
+    }
+    else
+    {
+        document.write("This number is Negative:"+a);
+    }
+output:=This number is  positive:1
+        This number is negative:-1
+
+(23).Find the Character Is Vowel or Not ?
+    var ch;
+    ch = prompt("Enter characters:")
+    if(ch=="a" || ch=="e" || ch=="i" || ch=="o" || ch=="u")
+    {
+        document.write("This is vowel:"+ch);
+    }
+    else
+    {
+        document.write("This is not vowel:"+ch);
+    }
+
+output:=This is vowel:a
+        This is not vowel:s
+
+(24).Write to check whether a number is negative, positive or zero?
+    var num
+    num = prompt("Enter Number:");
+    if(num > 0)
+    {
+        console.log("This number is Positive:");
+    }
+    else if(num < 0)
+    {
+        console.log("This Number is Negative:");
+    }
+    else
+    {
+        console.log("This Number is Zero:");
+    }
+    
+    output:= This number is positive:
+        This number is negative:
+        This number is zero:
+
+(25).Write to find number is even or odd using ternary operator in JS?
+    var evenodd;
+    var evenodd=prompt("Enter Number:");
+    if(evenodd%2 == 0)
+    {
+        console.log("This is Even Number.");
+    }
+    else
+    {
+        console.log("This is Odd Number.");
+    }
+
+output:=Enter Number=2
+        This is Even Number.
+        Enter Number=3
+        This is odd Number.
+
+(26).Write find maximum number among 3 numbers using ternary operator in JS?
+    var a=10;
+    var b=90;
+    var c=30;
+    maximum=(a>b)? (a>c?a:c) : (b>c?b:c);
+    {
+    console.log(maximum);
+    }
+output:=90
+
+(27). Write to find minimum number among 3 numbers using ternary operator in JS?
+    var a=10;
+    var b=20;
+    var c=5;
+    minimum=(a < b)?(a < c?a:c):(b < c?b:c);
+    {
+        console.log(minimum);
+    }
+output:=5
+
+(28).Write to find the largest of three numbers in JS?
+    var lar;
+    var a=10;
+    var b=19;
+    var c=15
+    if(a>=b && a>=c )
+    {
+        lar=a;
+    }
+    else if(b>=a && b>=c)
+    {
+        lar=b;
+    }
+    else
+    {
+        lar=c;
+    }
+    console.log("This is largest number:"+lar);  //output:=This is largest number:19
+
+(29) Write to show
+    i. Monday to Sunday using switch case in JS?
+    var day=1;
+    switch(day)
+    {
+        case 1:
+            console.log("Sunday");
+            break;
+        case 2:
+            console.log("Monday");
+            break;
+        case 3:
+            console.log("Tuesday");
+            break;
+        case 4:
+            console.log("wednesday");
+            break;    
+        case 5:
+            console.log("Thusday");
+            break;
+        case 6:
+            console.log("Friday");
+            break;
+        case 7:
+            console.log("Saturday");
+            break;
+        default:
+            console.log("no value");
+    }
+    
+    ii. Vowel or Consonant using switch case in JS?
+
+(30). What are the looping structures in JavaScript? Any one Example.
+loop are control structure that allow you to execute a block of code repeatedly as long as a specified condition is true.javascript support several type of loops.
+for loop , while loop , do while looping
+
+example: for loop
+for(i=1 ; i<=10 ; i++)
+{
+    console.log(i);
+}
+
+(31).Write a print 972 to 897 using for loop in JS?
+for( let i=972;i>=897;i--)
+{
+    console.log(i);
+}
+
+(32). Write to print factorial of given number?
+var num=5;
+var fact=1;
+for( var i=1 ; i<= num ; i++)
+{
+    fact=fact * i;
+}
+console.log("this number is fact:"+fact);
+
+(33). Write to print Fibonacci series up to given numbers?
+
+(34).Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS?
+const reverseNumber = num => parseInt(num.toString().split("").reverse().join(""), 10);
+console.log(reverseNumber(64728));  /output:=82746
+
+(35).Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?
+let number = 1523;
+let str = number.toString()
+console.log(str);
+let sum = 0
+for(let i = 0; i < str.length;i++)
+{
+    sum = sum + parseInt(str[i])
+}
+console.log(sum);  output:=1523 sum=11
+
+(36).Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: -5) in JS?
+let sum = 1234
+let str = sum.toString()
+let first = parseInt(str[0])
+let last = parseInt(str[str.length - 1])
+console.log(first + last);    output:=5
+
+(37).Use console.log() and escape characters to print the following pattern in JS?
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+console.log("1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 175");
+
+(38).Use pattern in console.log in JS?
+1)  1
+    1 0
+    1 0 1
+    1 0 1 0
+    1 0 1 0 1
+
+    for(i=1;i<=5;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                if(j%2==0)
+                {
+                    document.write("0");
+                }
+                else
+                {
+                    document.write("1");
+                }
+                
+            }
+                document.write("<br>");
+        }
+
+2)  A
+    B C
+    D E F
+    G H I J
+    K L M N O
+    
+    console.log("A\nB C\nD E F\nG H I J\nK L M N O");
+
+3)  1
+    2 3
+    4 5 6
+    7 8 9 10
+    11 12 13 14 15
+
+    var a = 1
+            for(i=1;i<=5;i++)
+            {
+                for(j=1;j<=i;j++)
+                    {
+                        document.write(a)
+                        a++
+                    }
+                    document.write("<br>")
+            }
+
+
+4)  *
+    * *
+    * * *
+    * * * *
+    * * * * *
+    for(i=1;i<=5;i++)
+            {
+                for(j=1;j<=i;j++)
+                {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+(40).Write a JavaScript Program to display the current day and time in the following format. Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?
+const n=new Date();
+const day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][n.getDay()];
+const hours = n.getHours();
+const minutes = n.getMinutes();
+const seconds = n.getSeconds();
+console.log(`Today is ${day}. Current Time is ${hours} : ${minutes} : ${seconds}`);
+
+output:=Today is Saturday. Current Time is 16 : 25 : 56
+
+(41). Write a JavaScript program to get the current date?
+var Date = new Date();
+document.write(Date);
+
+output:=Sat Jun 15 2024 16:29:20 GMT+0530 (India Standard Time)
+
+(42).Write a JavaScript program to compare two objects?
+(43).Write a JavaScript program to convert an array of objects into CSV string?
+(44).Write a JavaScript program to capitalize first letter of a string?
+var str="samrudhdhi";
+var capitalizestr=(str);
+console.log(capitalizestr);
+
+(45).Write a JavaScript program to determine if a variable is array?
+(46).Write a JavaScript program to clone an array?
+let originalarray = [1,2,3,4,5];
+let clonearray = originalarray.slice();
+console.log("originalarray:"+originalarray);
+console.log("clonedarray:"+clonearray);
+
+(47).What is the drawback of declaring methods directly in JavaScript objects?
+(48).Print the length of the string on the browser console using console.log()?
+var str = "good morning";
+console.log(str.length); output :=12
+
+(49).Change all the string characters to capital letters using toUpperCase() method?
+let str='red,green,blue'
+let newstr=str.toUpperCase();
+console.log(newstr);  output:=RED,GREEN,BLUE
+
+(50).What is the drawback of declaring methods directly in JavaScript objects?
+(51).Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?
+function formatDate(dateFormat) {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+  
+    if (dateFormat === 'mm-dd-yyyy') {
+      return `${mm}-${dd}-${yyyy}`;
+    } else if (dateFormat === 'mm/dd/yyyy') {
+      return `${mm}/${dd}/${yyyy}`;
+    } else if (dateFormat === 'dd-mm-yyyy') {
+      return `${dd}-${mm}-${yyyy}`;
+    } else if (dateFormat === 'dd/mm/yyyy') {
+      return `${dd}/${mm}/${yyyy}`;
+    }
+  }
+  
+  console.log(formatDate('mm-dd-yyyy'));        
+  console.log(formatDate('mm/dd/yyyy')); 
+  console.log(formatDate('dd-mm-yyyy')); 
+  console.log(formatDate('dd/mm/yyyy')); 
+  
+  output:=06-15-2024
+          06/15/2024
+          15-06-2024
+          15/06/2024
+
+(52).Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript?
+const Days=["sunday","monday","tuesday","Wednesday","Thursday","Friday","Saturday"];
+let position=Days.indexOf("sunday");
+console.log(position);  output:=0
+
+(53).Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript?
+const Days=["sunday","monday","sunday","Wednesday","Thursday","Friday","Saturday"];
+let position=Days.lastIndexOf("sunday");
+ console.log(position);
+
+ output:=2
+
+(54).Form Validtion in JS?
+(55).Form in Email, number, Password, Validation?
+(56). Dynamic Form Validation in JS?
+(57). how many type of JS Event? How to use it ?
+Event handlers can be used to handle and verify user input, user actions, and browser actions.
+There are many different types of events that can occur.
+type of event.
+keyboard event:=onkeypress,onkeydown,onkeyup.
+mouse event:=click,onclick,mouseenter,mouseleave.
+form event:=onchange,focus,submit,blur.
+
+example:=mouseevent:
+<body>
+    <button onclick="changecolor()" > onclick</button>
+    <button onmouseenter="alertT(event)" > click</button>
+
+
+<style>
+function changecolor()
+{
+    document.body.style.backgroundColor="red"
+}
+function alertT(e)
+{
+    alert('hello')
+}
+</style>
+</body>
+
+(Q.59) What is Bom vs Dom in JS?
+Bom = browser object model.
+The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
+There are no official standards for the Browser Object Model (BOM).
+The window object is supported by all browsers. It represents the browser's window.
+
+bom object:=window,screen,location,navigator.
+window ex:let w = window.innerWidth;
+                console.log(w);
+          let h = window.innerHeight;
+                console.log(h)
+
+location example:=
+console.log(window.location.href);
+
+what is DOM?
+DOM = Document Object Medel.
+JavaScript can access and change all the elements of an HTML document.
+<body>
+    <h1 id="demo"></h1>
+<script>
+    document.getElementById('demo').innerHTML="hello";
+</script>
+</body>
+
+(60).Array vs object defences in JS?
+array:= array is a collection of items that are stored in a single variable, and each item is identified by its index or key. Arrays are zero-indexed, meaning the first item is at index 0. Arrays can contain any type of value, including numbers, strings, booleans, objects, and even other arrays.
+array method:=push(),pop(),shift(),unshift().
+
+object:= object is a collection of key-value pairs, where each key is a string and each value can be any type of value. Objects are often used to represent a single entity or a set of related data.
+
+(61).Split the string into an array using split() Method?
+    let str = "samrudhdhi dodiya";
+    let arr=str.split();
+    console.log(arr);  
+
+(62).Check if the string contains a word Script using includes() method?
+    const s=["java","script","html"];
+    let position = s.includes("script");
+    console.log(position);  output:= true
+
+(63).Change all the string characters to lowercase letters using toLowerCase() Method.
+l   et str='RED,GREEN,BLUE'
+    let newstr=str.toLowerCase();
+    console.log(newstr);     output:=red,green,blue
+
+(64).What is Character at index 15 in ’30 Days of JavaScript’ string? Use charAt() method. Q.65 copy to one string to another string in JS?
+    let str = 'hii hello how are you';
+    console.log(str.charAt(15));    output:=r
+
+(65).copy to one string to another string in JS?
+    var str="hii";
+    var str1=str;  output:=hii
+
+(66).Find the length of a string without using libraryFunction?
+•What is JavaScript?
+JavaScript is a high-level, interpreted programming language that is widely used for client-side web development to create interactive effects within a web browser. It is also used for server-side development using Node.js and for creating native mobile apps using technologies such as React Native. JavaScript is an object-oriented, dynamic and flexible language that is easy to learn and is used to add interactivity and other dynamic elements to websites.
+
+•What is the use of isNaN function?
+The isNaN function in JavaScript is used to determine whether a value is NaN (Not-a-Number) or not. It returns true if the value passed to it is NaN, and false otherwise. The isNaN function is often used to validate user input, especially when the input is expected to be a number, to avoid errors and unexpected behavior in the code.
+For example:
+console.log(isNaN(123));  // false
+console.log(isNaN("Hello"));  // true
+
+•What is negative Infinity?
+In JavaScript, -Infinity represents negative infinity, which is a numeric value that represents a quantity that is less than negative infinity. This value is obtained by dividing a negative number by zero. -Infinity is a special value in the JavaScript language and is used to represent the result of certain mathematical operations, such as when the result of a calculation is smaller than the smallest representable number.
+For example:
+console.log(1 / -0);  // -Infinity
+
+•Which company developed JavaScript?
+JavaScript was developed by Netscape Communications Corporation in the mid-1990s as a scripting language for web browsers. It was created by Brendan Eich, who was a programmer at Netscape at the time. JavaScript was initially called Mocha and was later changed to Livescript before finally being named JavaScript. JavaScript quickly became popular due to its versatility and ability to add interactivity and dynamic elements to websites, and it is now an essential technology for front-end web development.
+
+•What are undeclared and undefined variables?
+In JavaScript, variables must be declared using the var, let, or const keywords before they can be used in the code.
+An undeclared variable is a variable that has not been declared using one of these keywords and is therefore not recognized by the JavaScript interpreter. Attempting to use an undeclared variable will result in a reference error.
+An undefined variable, on the other hand, is a variable that has been declared using one of the keywords, but has not been assigned a value. The value of an undefined variable is undefined.
+For example:
+// undeclared variable
+console.log(x);  // Uncaught ReferenceError: x is not defined
+// undefined variable
+var y;
+console.log(y);  // undefined
+
+•Write the code for adding new elements dynamically?
+There are several ways to dynamically add new elements to a web page using JavaScript, here are a few common ones:
+1.	Using innerHTML property: You can use the innerHTML property to dynamically add new elements to an existing HTML element.
+// select the target element
+var target = document.getElementById("target");
+// add a new element
+target.innerHTML = "<p>This is a new paragraph.</p>";
+2.	Using the createElement and appendChild methods: You can use the createElement method to create a new HTML element, and the appendChild method to add it to an existing element.
+// select the target element
+var target = document.getElementById("target");
+
+// create a new element
+var newElement = document.createElement("p");
+newElement.innerHTML = "This is a new paragraph.";
+
+// add the new element to the target
+target.appendChild(newElement);
+3.	Using the insertAdjacentHTML method: You can use the insertAdjacentHTML method to add new HTML elements to an existing element.
+// select the target element
+var target = document.getElementById("target");
+// add a new element
+target.insertAdjacentHTML("beforeend", "<p>This is a new paragraph.</p>");
+
+•What is the difference between ViewState and SessionState?
+ViewState and SessionState are both mechanisms used to store data on the server in a web application. However, they differ in their scope, lifetime, and use case.
+ViewState is a mechanism used to store the state of a web page between postbacks. It is used to retain values of controls on the page, such as text boxes, drop-down lists, and other user inputs, between postbacks. The data is stored as a hidden field in the HTML of the page and is sent back and forth between the client and server with each request and response. The lifetime of ViewState data is limited to the life of the current page and is lost when the user navigates to another page.
+SessionState, on the other hand, is a mechanism used to store data that is specific to a particular user session. It is used to store data that needs to persist across multiple page requests and multiple postbacks during a user session. The data is stored on the server and can be accessed from any page in the application. The lifetime of SessionState data is maintained for the duration of the user session, which is typically established when the user logs in and lasts until the user logs out or their session times out.
+ ViewState is used to sto
+ re data specific to a single web page, while SessionState is used to store data specific to a user session that needs to persist across multiple pages.
+
+•What is === operator?
+The === operator in JavaScript is known as the strict equality operator. It compares two values for equality and returns true if the values are equal and false otherwise. Unlike the equality operator ==, the strict equality operator === performs type coercion. That means it compares values after converting both operands to the same type.
+For example:
+console.log(1 === 1);         // true
+console.log("1" === 1);       // false
+console.log(true === 1);      // false
+console.log(null === undefined); // false
+
+•How can the style/class of an element be changed?
+JavaScript, you can change the style or class of an HTML element in several ways:
+1.	Using the style property: You can directly access the style property of an element and set its CSS properties.
+// select the element
+var element = document.getElementById("target");
+
+// change the style of the element
+element.style.backgroundColor = "red";
+element.style.height = "100px";
+element.style.width = "100px";
+2.	Using the className property: You can access the className property of an element and set it to the class name you want to apply. This will change the styles applied to the element using the specified class in your CSS.
+// select the element
+var element = document.getElementById("target");
+
+// change the class of the element
+element.className = "new-class";
+3.	Using the setAttribute method: You can use the setAttribute method to add or modify the class attribute of an element.
+// select the element
+var element = document.getElementById("target");
+
+// change the class of the element
+element.setAttribute("class", "new-class");
+These are just a few ways to change the style or class of an element in JavaScript. The method you choose will depend on your specific requirements and the structure of your HTML and CSS.
+
+•How to read and write a file using JavaScript?
+
+•What are all the looping structures in JavaScript?
+1.	for loop: The for loop is used to execute a block of code repeatedly a specific number of times. The syntax for a for loop is:
+for (initialization; condition; iteration) {
+  // code to be executed
+}
+Here's an example:
+for (var i = 0; i< 5; i++) {
+  console.log(i);
+}
+This will log the numbers 0 to 4 to the console.
+2.	while loop: The while loop is used to execute a block of code repeatedly as long as a specified condition is true. The syntax for a while loop is:
+while (condition) {
+  // code to be executed
+}
+Here's an example:
+var i = 0;
+while (i< 5) {
+  console.log(i);
+i++;
+}
+This will log the numbers 0 to 4 to the console.
+Additionally, there's also the do...while loop, which is similar to the while loop, but the code in the loop will be executed at least once, even if the condition is false. The syntax for a do...while loop is:
+do {
+  // code to be executed
+} while (condition);
+
+These are the main
+ looping structures in JavaScript. Loops are useful for repeating operations, and they are a fundamental part of most programming languages.
+
+•How can you convert the string of any base to an integer in JavaScript?
+JavaScript, you can use the parseInt function to convert a string representation of a number in any base to an integer. The parseInt function takes two arguments: the string to be converted, and the base of the string representation (optional, defaults to base 10).
+Here's an example:
+const binaryString = "1010";
+const decimal = parseInt(binaryString, 2);
+console.log(decimal); // Output: 10
+
+•What is the function of the delete operator?
+The delete operator is used in JavaScript to remove properties from objects. The delete operator takes an object property as its operand and, if the property is deletable, removes the property and returns true. If the property is not deletable or doesn't exist, the delete operator returns false.
+Here's an example:
+let obj = { name: "John", age: 30 };
+
+delete obj.age;
+console.log(obj); // Output: { name: "John" }
+
+delete obj.gender;
+console.log(obj); // Output: { name: "John" }
+
+•What are all the types of Pop up boxes available in JavaScript?
+
+•What is the use of Void (0)?
+he void(0) expression is a common technique used in JavaScript to prevent the default behavior of a page element, such as a link. When a link is clicked, it typically causes the browser to navigate to a different page. By using void(0) as the value of the href attribute, the default behavior of the link is cancelled, and the navigation is prevented.
+Here's an example:
+<a href="javascript:void(0);" onclick="alert('Hello World');">Click Me</a>
+In this example, the void(0) expression is used in the href attribute of the link to prevent the default behavior of the link. When the link is clicked, the onclick event is triggered and an alert box with the message "Hello World" is displayed.
+The void(0) expression is equivalent to undefined and is used because it's a concise way to return undefined as the result of an expression. By returning undefined, the expression has no effect on the web page and prevents the default behavior of the page element.
+
+•How can a page be forced to load another page in JavaScript?
+In JavaScript, you can use the window.location object to force a page to load another page. The window.location object has a property called href that can be used to set the URL of the page to be loaded.
+Here's an example:
+window.location.href = "https://www.example.com";
+In this example, the window.location.href property is set to the URL "https://www.example.com", which causes the current page to navigate to the specified URL.
+You can also use the window.location.replace method to load another page, which replaces the current page in the history stack and prevents the user from navigating back to the previous page using the browser's back button.
+Here's an example:
+window.location.replace("https://www.example.com");
+In this example, the window.location.replace method is used to load the URL "https://www.example.com", which replaces the current page in the history stack and prevents the user from navigating back to the previous page.
+
+•What are the disadvantages of using innerHTML in JavaScript?
+1.	Security Concerns: Using innerHTML to insert dynamic content from untrusted sources can result in security vulnerabilities such as Cross-Site Scripting (XSS).
+2.	Performance Issues: Modifying the innerHTML property can be slow, especially for larger amounts of content, as the browser must re-render the entire contents of the element.
+3.	Inconsistent Behavior: Different browsers may have different implementations of the innerHTML property, leading to inconsistent behavior and difficulties with cross-browser compatibility.
+4.	Difficult to maintain code: Modifying the contents of an element using innerHTML can result in a cluttered and difficult-to-maintain codebase.
+5.	Lack of Separation of Concerns: Using innerHTML to manipulate the DOM tightly couples the structure of the HTML and the behavior of the JavaScript code, making it harder to maintain and test.
+
+•Create password field with show hide functionalities.
+<body>
+    <input id="input" type="password">
+     <button id="check" onclick="check(event)">show password</button>
+<script>
+    function check(e)
+{
+    var type = document.getElementById('input').getAttribute('type')
+    if(type == 'password')
+    {
+        document.getElementById('input').setAttribute('type','text');
+        e.target.innertext='hide'
+    }
+    else
+    {
+        document.getElementById('input').setAttribute('type','password');
+        e.target.innertext='show'
+    }
+}
+
+
+</script>
+</body>
